@@ -2,16 +2,17 @@
 # Grupo: Rafael Felix e Cristian Belasco
 # 🔗 Acesse a Simulação:
 Wokwi: https://wokwi.com/projects/432494905705839617
-# Link para o video: ...
+# Link para o video:
+...
 
-#📌 Descrição do Problema
+#📌 Descrição do Problema:
 Cidades brasileiras como Porto Alegre, São Leopoldo, Novo Hamburgo, Canoas, Blumenau, Joinville e Curitiba enfrentam enchentes recorrentes, frequentemente causadas por:
 Chuvas fortes e inesperadas;
 Transbordamento de rios, canais e sistemas de esgoto;
 Falta de alertas preventivos e monitoramento adequado.
 Esses desastres resultam em perdas materiais, deslocamento de famílias e riscos à vida. A ausência de sistemas de aviso precoce agrava ainda mais o impacto dessas enchentes.
 
-#💡 Visão Geral da Solução
+#💡 Visão Geral da Solução:
 Este projeto apresenta uma solução de baixo custo e acessível utilizando Arduino para monitorar o nível da água e emitir alertas em tempo real.
 
 #🛠 Funcionalidades:
