@@ -2,8 +2,7 @@
 # Grupo: Rafael Felix e Cristian Belasco
 # 🔗 Acesse a Simulação:
 Wokwi: https://wokwi.com/projects/432494905705839617
-# Link para o video:
-...
+# Link para o video: ...
 
 #📌 Descrição do Problema:
 Cidades brasileiras como Porto Alegre, São Leopoldo, Novo Hamburgo, Canoas, Blumenau, Joinville e Curitiba enfrentam enchentes recorrentes, frequentemente causadas por:
