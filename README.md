@@ -25,6 +25,7 @@ Possibilidade de previsão de chuva(via dht com led)
 Simulação via Wokwi
 
 #🖼️ Ilustração do Projeto:
+
 ![image](https://github.com/user-attachments/assets/d049f498-8d4f-45a6-af4f-f65876070c12)
 
 #📘 Guia de Simulação
