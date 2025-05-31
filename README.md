@@ -1,12 +1,8 @@
 # GS-edge
-sdaasddasdasd
+# Grupo: Rafael Felix, Cristian Belasco
+# Link do projeto: https://wokwi.com/projects/432494905705839617
+# Link para o video: ...
 
-dsasd
-ads
-ads
+# Descrição do problema: 
 
-ads
-ads
-asd
-as
-ds
+# Visão geral da Solução:
