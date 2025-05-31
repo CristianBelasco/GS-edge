@@ -1,0 +1,75 @@
+#include <DHT.h>
+
+// Definições de pinos
+#define TRIG_PIN 9
+#define ECHO_PIN 8
+#define DHT_PIN 7
+#define DHT_TYPE DHT22
+
+#define LED_VERDE 2
+#define LED_AMARELO 3
+#define LED_VERMELHO 4
+#define BUZZER 5
+
+DHT dht(DHT_PIN, DHT_TYPE);
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(TRIG_PIN, OUTPUT);
+  pinMode(ECHO_PIN, INPUT);
+  
+  pinMode(LED_VERDE, OUTPUT);
+  pinMode(LED_AMARELO, OUTPUT);
+  pinMode(LED_VERMELHO, OUTPUT);
+  pinMode(BUZZER, OUTPUT);
+
+  dht.begin();
+}
+
+void loop() {
+  // Medir distância da água
+  digitalWrite(TRIG_PIN, LOW);
+  delayMicroseconds(2);
+  digitalWrite(TRIG_PIN, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIG_PIN, LOW);
+
+  long duracao = pulseIn(ECHO_PIN, HIGH);
+  float altura = duracao * 0.034 / 2;
+
+  // Medir umidade
+  float umidade = dht.readHumidity();
+
+  Serial.print("Altura: ");
+  Serial.print(altura);
+  Serial.println(" cm");
+
+  Serial.print("Umidade: ");
+  Serial.print(umidade);
+  Serial.println(" %");
+
+  // Resetar todos os alertas
+  digitalWrite(LED_VERDE, LOW);
+  digitalWrite(LED_AMARELO, LOW);
+  digitalWrite(LED_VERMELHO, LOW);
+  digitalWrite(BUZZER, LOW);
+
+  // Verificar nível de água
+  if (altura < 50) {
+    digitalWrite(LED_VERDE, HIGH); // Nível seguro
+  } else if (altura <= 100 && altura > 50) {
+    digitalWrite(LED_AMARELO, HIGH);// Atenção 
+  } else if (altura > 100) {
+    digitalWrite(LED_VERMELHO, HIGH); // Perigo
+    digitalWrite(BUZZER, HIGH);
+  }
+
+  // Verificar umidade do ar (indicativo de chuva)
+  if (umidade > 80 && altura > 150) {
+    digitalWrite(LED_AMARELO, HIGH); // Alta umidade, possível chuva
+    digitalWrite(LED_VERMELHO, LOW);
+    digitalWrite(LED_VERDE, LOW);
+  }
+
+  delay(2000); // Aguarda 2 segundos
+}
