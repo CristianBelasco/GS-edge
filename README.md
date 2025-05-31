@@ -1,6 +1,5 @@
 # GS-edge
 # Grupo: Rafael Felix e Cristian Belasco
-# 🔗 Acesse a Simulação:
 # Link do Wokwi: https://wokwi.com/projects/432494905705839617
 # Link para o video: ...
 
