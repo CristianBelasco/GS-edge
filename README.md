@@ -26,7 +26,8 @@ Simulação via Wokwi.
 # 📘 Guia de Simulação:
 Acesse o link do projeto no inicio do README.
 Ao entrar no link clique no botão "play" para iniciar o projeto.
-Altere os valores no HC-SR04 para que os LEDS alternem entre ✅ Estável, ⚠️ Alerta e 🚨 Perigo. 
+Altere os valores no HC-SR04 para que os LEDS alternem entre ✅ Estável, ⚠️ Alerta e 🚨 Perigo.
+Um buzzer ira tocar se o led estiver no nível de perigo ou se há indicativo de chuva.
 Para verificar se há o indicativo de chuva deixe a distância acima de 2m e a humidade do DHT22 acima de 80%.
 
 # 🖼️ Ilustração do Projeto:
