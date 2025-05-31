@@ -57,15 +57,15 @@ void loop() {
   // Verificar nível de água
   if (altura < 50) {
     digitalWrite(LED_VERDE, HIGH); // Nível seguro
-  } else if (altura <= 100 && altura > 50) {
+  } else if (altura <= 150 && altura > 50) {
     digitalWrite(LED_AMARELO, HIGH);// Atenção 
-  } else if (altura > 100) {
+  } else if (altura > 150) {
     digitalWrite(LED_VERMELHO, HIGH); // Perigo
     digitalWrite(BUZZER, HIGH);
   }
 
   // Verificar umidade do ar (indicativo de chuva)
-  if (umidade > 80 && altura > 150) {
+  if (umidade > 80 && altura > 200) {
     digitalWrite(LED_AMARELO, HIGH); // Alta umidade, possível chuva
     digitalWrite(LED_VERMELHO, LOW);
     digitalWrite(LED_VERDE, LOW);
