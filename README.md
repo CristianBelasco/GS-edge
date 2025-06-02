@@ -1,7 +1,7 @@
 # GS-edge
 # Grupo: Rafael Felix, RM:565855 e Cristian Belasco, RM:565710
 # Link do Wokwi: https://wokwi.com/projects/432494905705839617
-# Link para o video: https://youtu.be/J5cbY_QLalU?si=mVE7OlqD56wI7U0A
+# Link para o video: [https://youtu.be/J5cbY_QLalU?si=mVE7OlqD56wI7U0A](https://youtu.be/J5cbY_QLalU?si=ZNkCSsIt1UPnb8q6)
 
 # 📌 Descrição do Problema:
 Cidades brasileiras como Porto Alegre, São Leopoldo, Novo Hamburgo, Canoas, Blumenau, Joinville e Curitiba enfrentam enchentes recorrentes, frequentemente causadas por:
